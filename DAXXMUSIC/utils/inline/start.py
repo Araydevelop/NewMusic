@@ -17,13 +17,13 @@ def start_panel(owner_id, support_chat_link, support_channel_link):
         [
             InlineKeyboardButton(
                 text="Support Chat",
-                url=support_chat_link
+                url=https://t.me/Hexa_Updates
             )
         ],
         [
             InlineKeyboardButton(
                 text="Support Channel",
-                url=support_channel_link
+                url="https://t.me/Hexa_Updates"
             )
         ]
     ]
