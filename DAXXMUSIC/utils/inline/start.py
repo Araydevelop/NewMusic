@@ -1,38 +1,35 @@
 from pyrogram.types import InlineKeyboardButton
 
-def start_panel(owner_id, support_chat_link, support_channel_link):
+import config
+from DAXXMUSIC import app
+
+
+def start_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="Add me to group or channel",
-                url=f"https://t.me/YourBotUsername?startgroup=true"
-            )
+                text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true"
+            ),
+            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
         ],
-        [
-            InlineKeyboardButton(
-                text=f"Owner: {owner_id}",
-                url=f"https://t.me/{owner_id}"
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="Support Chat",
-                url=https://t.me/Hexa_Updates
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="Support Channel",
-                url="https://t.me/Hexa_Updates"
-            )
-        ]
     ]
     return buttons
 
-# Example usage:
-owner_id = "OwnerTelegramID"
-support_chat_link = "https://t.me/YourSupportChat"
-support_channel_link = "https://t.me/YourSupportChannel"
 
-keyboard = start_panel(owner_id, support_chat_link, support_channel_link)
-   
+def private_panel(_):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text=_["S_B_3"],
+                url=f"https://t.me/{app.username}?startgroup=true",
+            )
+        ],
+        [
+            InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
+            InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
+        ],
+        [
+            InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper"),
+        ],
+    ]
+    return buttons
