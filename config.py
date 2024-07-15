@@ -12,9 +12,9 @@ API_HASH = getenv("API_HASH")
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 # Add Owner Username without @ 
-OWNER_USERNAME = getenv("OWNER_USERNAME","Hexa_botz_Support")
+OWNER_USERNAME = getenv("OWNER_USERNAME","@shivangmishra")
 # Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME" , "Hexa_Musicbot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "@Strike_xd_musicbot")
 # Don't Add style font 
 BOT_NAME = getenv("BOT_NAME" , "Hexa_Music")
 #get Your Assistant User name
@@ -39,7 +39,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://t.me/Hexa_Bots_Association",
+    "https://t.me/HEXA_EMPIRE",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv(
@@ -47,7 +47,7 @@ GIT_TOKEN = getenv(
 )  # Fill this variable if your upstream repository is private
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Hexa_Updates")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/About_Hexabots")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/HEXA_EMPIRE")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "false")
